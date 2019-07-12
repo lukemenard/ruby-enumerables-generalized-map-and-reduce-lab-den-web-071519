@@ -16,7 +16,7 @@ def reduce(source_array, starting_value = 0)
     return false
   elsif source_array.all? == false
     return false
-  elsif source_array.contants?(nil)
+  elsif source_array.contains?(nil)
     return false
   
   else
