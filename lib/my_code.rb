@@ -13,7 +13,7 @@ def reduce(source_array, starting_value = 0)
   new_value = 0
   
   
-  if source_array.include?(nil) && !source_array.include?(false)
+  if source_array.include?(nil) && source_array.include?(true)
     return true
   elseif source_array.include?(nil) && source_array.include?(false)
     return false
