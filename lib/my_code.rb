@@ -14,9 +14,11 @@ def reduce(source_array, starting_value = 0)
   
   if source_array.include?(nil)
     return true
-  elsif source_array.none?(true)
-    return false
+
   elsif source_array.any? == false
+    return false
+    
+  elsif source_array.none?(true)
     return false
 
 
