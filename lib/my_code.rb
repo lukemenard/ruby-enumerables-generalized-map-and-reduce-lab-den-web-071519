@@ -12,12 +12,13 @@ def reduce(source_array, starting_value = 0)
   i = 0
   new_value = 0
   
-  if source_array.any? == false
+  if source_array.include?(nil)
+    return true
+  elsif source_array.any? == false
     return false
   elsif source_array.all? == false
     return false
-  elsif source_array.include?(nil) && source_array.include?(true)
-    return true
+
   
   else
     while i == 0 do
